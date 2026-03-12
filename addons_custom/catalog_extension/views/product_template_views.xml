@@ -1,0 +1,21 @@
+<odoo>
+    <record>
+        <field id="catalog_extension_product_template_form_view"/>
+        <field model="ir.ui.view"/>
+        <field inherit_id="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="after">
+                <groupe string="Catalog Extension"> 
+                    <group>
+                        <field name="badge_label"/>
+                        <field name="warranty_months"/>
+                    </group>
+                    <group>
+                        <field name="product_origin"/>
+                        <field name="is_promo_active"/>
+                    </group>
+                <group/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
